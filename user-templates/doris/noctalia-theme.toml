@@ -1,0 +1,77 @@
+name = "noctalia"
+
+main_bg.r = {{colors.surface.default.red}}
+main_bg.g = {{colors.surface.default.green}}
+main_bg.b = {{colors.surface.default.blue}}
+main_fg.r = {{colors.on_surface.default.red}}
+main_fg.g = {{colors.on_surface.default.green}}
+main_fg.b = {{colors.on_surface.default.blue}}
+title.r = {{colors.primary.default.red}}
+title.g = {{colors.primary.default.green}}
+title.b = {{colors.primary.default.blue}}
+hi_fg.r = {{colors.tertiary.default.red}}
+hi_fg.g = {{colors.tertiary.default.green}}
+hi_fg.b = {{colors.tertiary.default.blue}}
+selected_bg.r = {{colors.surface_variant.default.red}}
+selected_bg.g = {{colors.surface_variant.default.green}}
+selected_bg.b = {{colors.surface_variant.default.blue}}
+selected_fg.r = {{colors.on_surface_variant.default.red}}
+selected_fg.g = {{colors.on_surface_variant.default.green}}
+selected_fg.b = {{colors.on_surface_variant.default.blue}}
+inactive_fg.r = {{colors.on_surface_variant.default.red}}
+inactive_fg.g = {{colors.on_surface_variant.default.green}}
+inactive_fg.b = {{colors.on_surface_variant.default.blue}}
+div_line.r = {{colors.outline.default.red}}
+div_line.g = {{colors.outline.default.green}}
+div_line.b = {{colors.outline.default.blue}}
+graph_text.r = {{colors.secondary.default.red}}
+graph_text.g = {{colors.secondary.default.green}}
+graph_text.b = {{colors.secondary.default.blue}}
+meter_bg.r = {{colors.surface_variant.default.red}}
+meter_bg.g = {{colors.surface_variant.default.green}}
+meter_bg.b = {{colors.surface_variant.default.blue}}
+search_box.r = {{colors.primary.default.red}}
+search_box.g = {{colors.primary.default.green}}
+search_box.b = {{colors.primary.default.blue}}
+log_box.r = {{colors.tertiary.default.red}}
+log_box.g = {{colors.tertiary.default.green}}
+log_box.b = {{colors.tertiary.default.blue}}
+player_box.r = {{colors.secondary.default.red}}
+player_box.g = {{colors.secondary.default.green}}
+player_box.b = {{colors.secondary.default.blue}}
+menu_bg.r = {{colors.surface.default.red}}
+menu_bg.g = {{colors.surface.default.green}}
+menu_bg.b = {{colors.surface.default.blue}}
+menu_fg.r = {{colors.on_surface.default.red}}
+menu_fg.g = {{colors.on_surface.default.green}}
+menu_fg.b = {{colors.on_surface.default.blue}}
+menu_selected_bg.r = {{colors.primary.default.red}}
+menu_selected_bg.g = {{colors.primary.default.green}}
+menu_selected_bg.b = {{colors.primary.default.blue}}
+menu_selected_fg.r = {{colors.on_primary.default.red}}
+menu_selected_fg.g = {{colors.on_primary.default.green}}
+menu_selected_fg.b = {{colors.on_primary.default.blue}}
+gradient_start.r = {{colors.primary.default.red}}
+gradient_start.g = {{colors.primary.default.green}}
+gradient_start.b = {{colors.primary.default.blue}}
+gradient_mid.r = {{colors.secondary.default.red}}
+gradient_mid.g = {{colors.secondary.default.green}}
+gradient_mid.b = {{colors.secondary.default.blue}}
+gradient_end.r = {{colors.tertiary.default.red}}
+gradient_end.g = {{colors.tertiary.default.green}}
+gradient_end.b = {{colors.tertiary.default.blue}}
+
+# Palette accents doris reads for its colour distribution: `primary`
+# paints the frames and the words on them, `error` the failures,
+# `on_hover` the keybind glyph inside a word. `secondary` is left out
+# on purpose: it falls back to hi_fg (tertiary here), which keeps the
+# seed column distinct from the rose the date/badge columns draw.
+primary.r = {{colors.primary.default.red}}
+primary.g = {{colors.primary.default.green}}
+primary.b = {{colors.primary.default.blue}}
+error.r = {{colors.error.default.red}}
+error.g = {{colors.error.default.green}}
+error.b = {{colors.error.default.blue}}
+on_hover.r = {{colors.on_surface.default.red}}
+on_hover.g = {{colors.on_surface.default.green}}
+on_hover.b = {{colors.on_surface.default.blue}}

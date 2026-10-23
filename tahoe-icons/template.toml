@@ -1,0 +1,8 @@
+[catalog.tahoe-icons]
+name = "MacTahoe Icon Theme"
+category = "system"
+
+[templates.tahoe_icons]
+input_path = "colors"
+output_path = "colors-final"
+post_hook = "bash '{{ config_dir }}/apply.sh'"

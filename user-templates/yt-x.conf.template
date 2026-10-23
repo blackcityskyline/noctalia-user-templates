@@ -1,0 +1,170 @@
+# ===================================================================================
+# 大きな力には大きな責任が伴う
+# ===================================================================================
+#
+#     ██╗░░░██╗████████╗░░░░░░██╗░░██╗  ░█████╗░░█████╗░███╗░░██╗███████╗██╗░██████╗░
+#     ╚██╗░██╔╝╚══██╔══╝░░░░░░╚██╗██╔╝  ██╔══██╗██╔══██╗████╗░██║██╔════╝██║██╔════╝░
+#     ░╚████╔╝░░░░██║░░░█████╗░╚███╔╝░  ██║░░╚═╝██║░░██║██╔██╗██║█████╗░░██║██║░░██╗░
+#     ░░╚██╔╝░░░░░██║░░░╚════╝░██╔██╗░  ██║░░██╗██║░░██╗██║╚████║██╔══╝░░██║██║░░╚██╗
+#     ░░░██║░░░░░░██║░░░░░░░░░██╔╝╚██╗  ╚█████╔╝╚█████╔╝██║░╚███║██║░░░░░██║╚██████╔╝
+#     ░░░╚═╝░░░░░░╚═╝░░░░░░░░░╚═╝░░╚═╝  ░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░
+#
+# ===================================================================================
+#
+# !! BE CAREFUL WHAT YOU INCLUDE HERE SINCE THE CONFIG FILE IS SOURCED AS A SCRIPT  !!
+# !! ITS RECOMMENDED TO ONLY DO VARIABLE ASSIGNMENTS AND CONDITIONAL ASSIGNMENTS    !!
+# !! AND DO MORE COMPLEX STUFF USING EXTENSIONS BY CONVENTION                       !!
+# !! Environment variables (export YT_X_VAR=...) override these settings.           !!
+#
+# ===================================================================================
+
+# List of extensions to load automatically on startup
+CONFIG_AUTOLOADED_EXTENSIONS=""
+
+# Enable or disable colored/formatted output
+# Options: true, false (Default: true)
+CONFIG_ENABLE_COLORS="true"
+
+# The menu launcher tool used for the ui
+# Options: fzf, rofi, gum (Default: fzf)
+CONFIG_LAUNCHER="fzf"
+
+# Enable image/video previews within the selector
+# Options: true, false (Default: false)
+CONFIG_ENABLE_PREVIEW="true"
+CONFIG_ENABLE_PREVIEW_IMAGES="true"
+
+# The tool used to render previews in the terminal
+# Options: chafa, icat, imgcat (Default: chafa)
+CONFIG_IMAGE_RENDERER="icat"
+
+# Extra arguments for specific image renderers
+CONFIG_CHAFA_ARGS=""
+CONFIG_ICAT_ARGS=""
+CONFIG_IMGCAT_ARGS=""
+
+# custom opts for yt-dlp
+CONFIG_YT_DLP_OPTS=""
+
+# The media player used for playback
+# Options: mpv, vlc, tplay (Default: mpv)
+CONFIG_PLAYER="mpv"
+
+# Extra arguments for specific media players
+CONFIG_MPV_ARGS=""
+CONFIG_VLC_ARGS=""
+CONFIG_TPLAY_ARGS=""
+
+# Whether to disown the player, process to prevent blocking the UI
+# options: true, false (Default: false)
+CONFIG_DISOWN_PLAYER="false"
+
+# Maximum number of search results to fetch per page
+# Options: Integer (Default: 30)
+CONFIG_PER_PAGE="30"
+
+# Browser for yt-dlp to get cookies from
+# passed to --cookies-from-browser yt-dlp option
+CONFIG_BROWSER=""
+
+# Text editor for manual configuration/metadata editing
+CONFIG_EDITOR="$EDITOR"
+
+# The terminal to use to execute commands that require a terminal
+CONFIG_TERMINAL_EXEC=""
+
+# Duration in seconds for desktop notifications
+CONFIG_NOTIFICATION_DURATION="5"
+
+# Directory where downloads are saved
+CONFIG_DOWNLOAD_DIR="/home/black/Videos/yt-x"
+CONFIG_DOWNLOADS_ENUMERATE="false"
+
+# Automatically check for script updates on startup
+CONFIG_CHECK_FOR_UPDATES="true"
+
+# Number of items to keep in the recent history
+CONFIG_NO_OF_RECENT="10"
+
+# Enable or disable saving search queries to history
+CONFIG_ENABLE_SEARCH_HISTORY="true"
+
+# ---------------------------------------------------------------------------
+# Noctalia color tokens:
+#   surface            → {{colors.surface.default.hex}}
+#   surface_variant    → {{colors.surface_variant.default.hex}}
+#   on_surface         → {{colors.on_surface.default.hex}}
+#   on_surface_variant → {{colors.on_surface_variant.default.hex}}
+#   primary            → {{colors.primary.default.hex}}
+#   on_primary         → {{colors.on_primary.default.hex}}
+#   secondary          → {{colors.secondary.default.hex}}
+#   tertiary           → {{colors.tertiary.default.hex}}
+#   outline            → {{colors.outline.default.hex}}
+#   error              → {{colors.error.default.hex}}
+# ---------------------------------------------------------------------------
+
+# Custom options passed directly to gum
+CONFIG_GUM_OPTS="--prompt.foreground {{colors.primary.default.hex}} --indicator.foreground {{colors.primary.default.hex}} --selected-indicator.foreground {{colors.primary.default.hex}} --unselected-prefix.foreground {{colors.on_surface_variant.default.hex}} --header.foreground {{colors.tertiary.default.hex}} --text.foreground {{colors.on_surface.default.hex}} --cursor-text.foreground {{colors.on_surface.default.hex}} --match.foreground {{colors.primary.default.hex}} --placeholder.foreground {{colors.on_surface_variant.default.hex}} --prompt  > --indicator ◆ --selected-prefix  ◉  --unselected-prefix  ○  --placeholder こんにちは..."
+
+CONFIG_GUM_INPUT_OPTS="--prompt.foreground {{colors.primary.default.hex}} --cursor.foreground {{colors.on_surface.default.hex}} --placeholder こんにちは... --cursor.mode blink"
+
+CONFIG_GUM_PAGER_OPTS="--foreground {{colors.on_surface.default.hex}} --line-number.foreground {{colors.on_surface_variant.default.hex}} --match.foreground {{colors.primary.default.hex}} --match-highlight.foreground {{colors.on_primary.default.hex}} --match-highlight.background {{colors.primary.default.hex}} --help.foreground {{colors.on_surface_variant.default.hex}} --show-line-numbers --soft-wrap --border-foreground {{colors.outline.default.hex}}"
+
+CONFIG_GUM_SPIN_OPTS="--spinner dot --spinner.foreground {{colors.primary.default.hex}} --title.foreground {{colors.on_surface_variant.default.hex}} --align left"
+
+CONFIG_GUM_CONFIRM_OPTS="--prompt.foreground {{colors.primary.default.hex}} --selected.foreground {{colors.on_primary.default.hex}} --selected.background {{colors.primary.default.hex}} --unselected.foreground {{colors.on_surface_variant.default.hex}}"
+
+# Custom options passed directly to fzf
+CONFIG_FZF_HEADER=""
+CONFIG_FZF_OPTS="
+  --ansi
+  --border
+  --scheme=history
+  --style=full
+  --color=bg+:{{colors.surface_variant.default.hex}}
+  --color=bg:{{colors.surface.default.hex}}
+  --color=border:{{colors.outline.default.hex}}
+  --color=fg:{{colors.on_surface.default.hex}}
+  --color=gutter:{{colors.surface.default.hex}}
+  --color=header:{{colors.tertiary.default.hex}}
+  --color=hl+:{{colors.primary.default.hex}}
+  --color=hl:{{colors.primary.default.hex}}
+  --color=info:{{colors.on_surface_variant.default.hex}}
+  --color=marker:{{colors.secondary.default.hex}}
+  --color=pointer:{{colors.secondary.default.hex}}
+  --color=prompt:{{colors.primary.default.hex}}
+  --color=query:{{colors.on_surface.default.hex}}:regular
+  --color=scrollbar:{{colors.outline.default.hex}}
+  --color=separator:{{colors.tertiary.default.hex}}
+  --color=spinner:{{colors.secondary.default.hex}}
+  --border=rounded
+  --border-label=''
+  --prompt=' >'
+  --marker=' >'
+  --pointer='◆'
+  --layout=reverse
+  --cycle
+  --ghost='こんにちは...'
+  --height=100%
+  --bind=right:accept,left:abort,ctrl-/:toggle-preview,ctrl-space:toggle-wrap+toggle-preview-wrap
+  --no-margin
+  +m
+  -i
+  --exact
+  --tabstop=1
+  --preview-window=border-rounded,left,35%,wrap
+  --wrap"
+
+# Rofi themes (optional, for rofi launcher)
+CONFIG_ROFI_THEME_MAIN=""
+CONFIG_ROFI_THEME_PREVIEW=""
+CONFIG_ROFI_THEME_PROMPT=""
+CONFIG_ROFI_THEME_CONFIRM=""
+CONFIG_ROFI_THEME_PAGER=""
+
+# Number of days to keep cached preview images, playlists, and logs
+CONFIG_CACHE_RETENTION_DAYS="2"
+
+# ==============================================================================
+# 楽しんでね
+# ==============================================================================

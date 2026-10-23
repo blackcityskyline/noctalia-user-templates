@@ -1,0 +1,28 @@
+[theme.templates.user.nvim-base16]
+input_path = "~/.config/nvim/lua/matugen-template.lua"
+output_path = "~/.config/nvim/lua/matugen.lua"
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[theme.templates.user.fish]
+input_path = "~/.config/noctalia/user-templates/fish-colors.fish"
+output_path = "~/.config/fish/colors.fish"
+
+[theme.templates.user.yt-x]
+input_path = "~/.config/noctalia/user-templates/yt-x.conf.template"
+output_path = "~/.config/yt-x/config"
+
+[theme.templates.user.vim]
+input_path = "~/.config/noctalia/user-templates/vim-colors.vim"
+output_path = "~/.config/vim/colors.vim"
+
+[theme.templates.user.mpv]
+input_path = "~/.config/noctalia/user-templates/mpv.conf.template"
+output_path = "~/.config/mpv/noctalia.conf"
+
+[theme.templates.user.uosc]
+input_path = "~/.config/noctalia/user-templates/uosc.conf.template"
+output_path = "~/.config/mpv/script-opts/uosc.conf"
+
+[theme.templates.user.doris]
+input_path = "~/.config/noctalia/user-templates/doris/noctalia-theme.toml"
+output_path = "~/.config/doris/themes/noctalia.toml"

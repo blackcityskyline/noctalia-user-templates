@@ -1,0 +1,62 @@
+# ============================================================
+# ~/.config/noctalia/x11-templates.toml
+#
+# ОТДЕЛЬНЫЙ файл, не трогает ~/.config/noctalia/config.toml
+# (тот, что использует Wayland-шелл под Hyprland/niri). Вызывается
+# только явно: `noctalia theme <img> -c ~/.config/noctalia/x11-templates.toml`
+# из wallpaper-random на OXWM.
+#
+# Список — это ровно то, что у тебя отмечено на скринах, МИНУС то,
+# что физически не имеет смысла на X11 (компоситоры/Wayland-only):
+#   исключены: foot, hyprland, niri, hyprtoolkit, snappy-switcher
+# ============================================================
+
+[theme.templates]
+enable_builtin_templates = true
+builtin_ids = [
+    "alacritty",
+    "btop",
+    "cava",
+    "emacs",
+    "gtk3",
+    "gtk4",
+    "kcolorscheme",
+    "kitty",
+    "qt",
+    "starship",
+]
+
+enable_community_templates = true
+community_ids = [
+    "pear-desktop",
+    "zen-browser",
+    "neovim",
+    "rofi",
+    "vicinae",
+    "bat",
+    "heroiclauncher",
+    "papirus-icons",
+    "telegram",
+    "yazi",
+    "zathura",
+]
+
+# ------------------------------------------------------------
+# User templates — то, чего нет в каталоге Noctalia: dunst, fish,
+# бар OXWM. Файлы те же самые, что я делал раньше (содержимое не
+# менялось, синтаксис {{colors.*}} общий с builtin/community).
+# ------------------------------------------------------------
+
+[theme.templates.user.dunst]
+input_path = "~/.config/noctalia/user-templates/dunstrc"
+output_path = "~/.config/dunst/dunstrc"
+post_hook = "dunstctl reload"
+
+[theme.templates.user.fish]
+input_path = "~/.config/noctalia/user-templates/fish-colors.fish"
+output_path = "~/.config/fish/colors.fish"
+
+[theme.templates.user.oxwm]
+input_path = "~/.config/noctalia/user-templates/oxwm-colors.lua"
+output_path = "~/.config/oxwm/colors.lua"
+post_hook = "xdotool key super+shift+r"
