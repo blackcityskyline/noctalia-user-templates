@@ -26,3 +26,7 @@ output_path = "~/.config/mpv/script-opts/uosc.conf"
 [theme.templates.user.doris]
 input_path = "~/.config/noctalia/user-templates/doris/noctalia-theme.toml"
 output_path = "~/.config/doris/themes/noctalia.toml"
+[theme.templates.user.hyprfm]
+input_path = "~/.config/noctalia/user-templates/hyprfm/noctalia-theme.toml"
+output_path = "~/.config/hyprfm/themes/noctalia.toml"
+post_hook = "icon_theme=$(gsettings get org.gnome.desktop.interface icon-theme 2>/dev/null | tr -d \"'\"); [ -z \"$icon_theme\" ] && icon_theme='MacTahoe-dark'; sed -i \"s/^theme = .*/theme = 'noctalia'/; s/^dark_theme = .*/dark_theme = 'noctalia'/; s/^light_theme = .*/light_theme = 'noctalia'/; s/^icon_theme = .*/icon_theme = '$icon_theme'/\" ~/.config/hyprfm/config.toml"
